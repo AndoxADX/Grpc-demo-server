@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+	<TargetFramework>net5.0</TargetFramework>
+	<UserSecretsId>f456c5ee-2575-4e29-89e1-1fa22464bcaf</UserSecretsId>
+	<DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+	<None Remove="Protos\author.proto" />
+	<None Remove="Protos\product.proto" />
+  </ItemGroup>
+
+  <ItemGroup>
+	<Protobuf Include="Protos\author.proto" GrpcServices="Server" />
+	<Protobuf Include="Protos\greet.proto" GrpcServices="Server" />
+	<Protobuf Include="Protos\product.proto" />
+  </ItemGroup>
+
+  <ItemGroup>
+	<PackageReference Include="Google.Protobuf" Version="3.15.7" />
+	<PackageReference Include="Grpc.AspNetCore" Version="2.34.0" />
+	<PackageReference Include="Grpc.Tools" Version="2.36.4">
+	  <PrivateAssets>all</PrivateAssets>
+	  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	</PackageReference>
+	  <PackageReference Include="Grpc.AspNetCore.Web" Version="2.36.0" />
+	<PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.9" />
+  </ItemGroup>
+
+</Project>

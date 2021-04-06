@@ -1,0 +1,92 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\andox\\source\\repos\\grpc\\GrpcStagingServer\\GrpcStagingDemo\\GrpcStagingDemo.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\andox\\source\\repos\\grpc\\GrpcStagingServer\\GrpcStagingDemo\\GrpcStagingDemo.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\andox\\source\\repos\\grpc\\GrpcStagingServer\\GrpcStagingDemo\\GrpcStagingDemo.csproj",
+        "projectName": "GrpcStagingDemo",
+        "projectPath": "C:\\Users\\andox\\source\\repos\\grpc\\GrpcStagingServer\\GrpcStagingDemo\\GrpcStagingDemo.csproj",
+        "packagesPath": "C:\\Users\\andox\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\andox\\source\\repos\\grpc\\GrpcStagingServer\\GrpcStagingDemo\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\andox\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Google.Protobuf": {
+              "target": "Package",
+              "version": "[3.15.7, )"
+            },
+            "Grpc.AspNetCore": {
+              "target": "Package",
+              "version": "[2.34.0, )"
+            },
+            "Grpc.AspNetCore.Web": {
+              "target": "Package",
+              "version": "[2.36.0, )"
+            },
+            "Grpc.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.36.4, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.10.9, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
